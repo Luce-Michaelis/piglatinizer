@@ -6,10 +6,14 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
-
-
-
+  $('button').click(function(){
+  	var message=$("input").val();
+  	var parrotMessage = squawk(message);
+    $("#message").text(parrotMessage);
+  });
+  function squawk(word){
+     return  " squawk "  + word ;
+  }
 });
 
 
